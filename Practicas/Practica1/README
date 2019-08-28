@@ -1,0 +1,74 @@
+﻿Arenas Olguín José Gerardo 
+Cortés Reyes Tanya Cecilia 
+
+a) ¿Cuál es la razón principal para usar Linux en el diseño de Sistemas 
+Embebidos? 
+
+* Se utiliza Linux para el diseño de Sistemas embebidos debido al 
+gran crecimiento y utilización de este sistema operativo 
+en distintas industrias. Algunas de las razones de este crecimiento
+se muestran a continuación: 
+
+* Royalies : Linux puede ser desarrollado sin ningun tipo de royalty.
+
+* Soporte de Hardware: Linux soporta una gran variedad de dispositivos de hardware,
+incluyendo la mayoría de las architecturas de CPUs: ARM , Intel x86, MIPS, PowerPC
+y sus respectivas variantes de 32 y 64 bits.
+
+* Redes: Linux soporta una gran variedad de protocolos de red. Aparte de TCP/IP,
+prácticamente cualquier protocolo de la capa física esta implementado.
+
+* Modularidad: El Stack de Linux está compuesto por varios paquetes de software. 
+Los usuarios pueden personalizar el Stack para que se ajuste exactamente a sus requerimientos.
+
+*Escalabilidad: Linux puede escalar desde sistemas simples de una CPU hasta sistemas multicore, 
+con grandes memorias, varias interfaces de red, etc.
+
+*Código Fuente: Tanto el código fuente del Kernel de Linux, 
+asi como el de sus paquetes de software incluidos en el Stack del sistema operativo (Linux OS Stack), 
+está dosponible en forma libre.
+
+*Soporte para Desarrolladores: Debido a sus caracteristicas de Open Source,
+ Linux cuenta con una gran cantidad de desarrolladores activos, 
+los cuales dan soporte rápidamente a eventuales nuevos dispositivos de hardware.
+
+*Soporte Comercial: Existe un número creciente de vendedores de software y hardware, 
+incluyendo a todos los productores de semiconductores y vendedores de software independientes que 
+actualmente ofrecen productos  y servicios de soporte para Linux.
+
+*Herramientas: Linux provee miles de herramientas para desarrollo de software, 
+que van desde compiladores para prácticamente todos los lenguajes de programación 
+hasta un número creciente de herramientas para el moniteoreo de rendimiento y profiling,
+ las cuales son importantes para el desarrollo de sistemas embebidos.
+
+Además, no hay que olvidar que El núcleo Linux, combinado con un conjunto de algunas otras utilidades de software libre, 
+puede ajustarse dentro del limitado espacio de hardware de los sistemas embebidos. 
+Una instalación típica de un Linux embebido ocupa en promedio 2 MB.
+
+b) Investigue los métodos (formas) de conectarse a una Raspberry Pi
+
+*SSH: Si lo que queremos es conectarnos de forma remota a un terminar para utilizar
+nuestro dispositivo en modo texto, el protocolo SSH es el que mejor se adapta a nuestras necesidades. 
+
+Por lo general, en muchas de las distribuciones Linux (especialmente aquellas pensadas para una administración remota, 
+como Raspbian, el SO del Raspberry Pi) las conexiones SSH están habilitadas por defecto.
+Además, el protocolo SSH también nos permite hacer uso del protocolo SFTP para poder acceder a todos los archivos
+almacenados en el servidor a través del protocolo FTP de forma segura y cifrada.
+
+*VNC: Mientras que la conexión SSH es muy útil  para conectarnos de forma remota a una terminal,
+si lo quequeremos es poder hacer uso de la interfaz gráfica de nuestro ordenador debemos recurrir a otras aplicaciones que nos
+permiten utilizar en modo gráfico nuestro ordenador, como es el caso de VNC.
+Con VNC podremos conectarnos desde cualquier lugar a nuestro servidor y 
+tener control total sobre el escritorio del mismo. Eso sí, puede que nos encontremos con algunas limitaciones, como, por ejemplo,
+una tasa de refresco muy lenta que hace que sean imposibles ciertas tareas, como ver vídeos.
+
+*RDP: RDP es el protocolo propietario de Microsoft que nos permite conectarnos de forma remota a cualquier ordenador con Windows y 
+administrarlo fácilmente sin depender de otras aplicaciones. Aunque esta herramienta viene instalada por defecto en todos los Windows,
+si queremos utilizarla desde otros sistemas operativos, como Linux, es necesario instalar la versión no oficial del protocolo 
+de manera que podamos establecer conexión con él.
+
+Referencias: 
+
+* https://www.redeszone.net/2017/05/12/controlar-remota-linux-raspberry-pi/
+* https://github.com/ASTROINGENIERIA/ASTROUFRO/wiki/Linux-para-Sistemas-Embebidos
+* http://www.sase.com.ar/2012/files/2012/09/Linux-para-sistemas-embebidos-SASE-2012.pdf
